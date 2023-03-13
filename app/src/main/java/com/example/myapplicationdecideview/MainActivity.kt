@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         var surname = text1.text.toString()
         var image = text2.text.toString()
         save.setOnClickListener {
-            list.add(MyClass("$image", "$name", "$surname"))
+            list.add(MyClass(text2.text.toString(), text.text.toString(), text1.text.toString()))
         }
         return list
 
