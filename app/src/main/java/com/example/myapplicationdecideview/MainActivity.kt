@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         var text1 = findViewById<EditText>(R.id.text1)
         var text2 = findViewById<EditText>(R.id.text2)
         var save = findViewById<Button>(R.id.save)
-
         save.setOnClickListener {
             list.add(MyClass(text2.text.toString(), text.text.toString(), text1.text.toString()))
         }
