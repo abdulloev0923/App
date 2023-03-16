@@ -2,10 +2,8 @@ package com.example.myapplicationdecideview
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ListView
+import android.widget.*
+import androidx.core.view.get
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -13,8 +11,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
+
         val rv = findViewById<RecyclerView>(R.id.my_recyclerview)
         rv.adapter = Adapter(getList())
+
+
+
+
     }
     fun getList():ArrayList<MyClass>{
         val list = ArrayList<MyClass>()
@@ -28,4 +34,8 @@ class MainActivity : AppCompatActivity() {
         return list
 
     }
+
+
+
+
 }
